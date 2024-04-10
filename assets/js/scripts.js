@@ -1,16 +1,60 @@
-$(document).ready(function(){
-    
-    // hamburger
-    $(".hamurger_menu").on('click',function(e){
-        e.preventDefault();
-        $(".header_menus").addClass("active")
-    })
-    
-    $(".close").on('click',function(e){
-        e.preventDefault();
-        $(".header_menus").removeClass("active")
-    })
+$(document).ready(function () {
+	// hamburger
+	$(".hamurger_menu").on("click", function (e) {
+		e.preventDefault();
+		$(".header_menus").addClass("active");
+	});
 
+	$(".close").on("click", function (e) {
+		e.preventDefault();
+		$(".header_menus").removeClass("active");
+	});
 
-    // 
+	// header navs
+	$(".header_menus li a").on("click", function (e) {
+		e.preventDefault();
+		$(".header_menus li a").removeClass("active");
+		$(this).addClass("active");
+	});
+	// footer navs
+	$(".footer_navs li a ").on("click", function (e) {
+		e.preventDefault();
+		$(".footer_navs li a").removeClass("active");
+		$(this).addClass("active");
+	});
+
+	// pagination
+	$(".page_numbers").on("click", function (e) {
+		e.preventDefault();
+		$(".page_numbers").removeClass("active");
+		$(this).addClass("active");
+	});
+	$(".next , .prev").on("click", function (e) {
+		e.preventDefault();
+	});
+
+	// hero swiper
+	if ($(".hero_swiper").length > 0) {
+		const hero_swiper = new Swiper(".hero_swiper", {
+			// Default parameters
+			slidesPerView: 1,
+			loop: true,
+			// Default parameters
+			pagination: {
+				el: ".hero_swiper_pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".hero_right_btn",
+				prevEl: ".hero_left_btn",
+			},
+			// breakpoints: {
+			// 	0: {
+			// 		slidesPerView: 1,
+			// 		spaceBetween: 20,
+			// 	},
+
+			// },
+		});
+	}
 });

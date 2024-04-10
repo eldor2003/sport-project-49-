@@ -195,24 +195,292 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 1920px) {
-  .container {
-    max-width: 1620px;
-    margin: 0 auto;
-    padding: 0;
-  }
+.dropdown-toggle::after {
+  border: none;
+  background: url(../images/icons/dropdown_icon.svg) no-repeat;
+  background-position: center;
+  width: 12px;
+  height: 7px;
+  position: relative;
+  top: 3px;
 }
-@media (max-width: 1600px) {
-  .container {
-    max-width: 1320px;
-  }
+
+.custom_checkbox input[type=checkbox] {
+  /* Hide the default checkbox */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 24px;
+  height: 24px; /* Set desired height */
+  border: 1px solid rgb(0, 0, 0);
+  outline: none; /* Remove default focus style */
+  cursor: pointer;
+  vertical-align: middle;
 }
-@media (max-width: 1400px) {
-  .container {
-    max-width: 1140px;
-  }
+
+.custom_checkbox input[type=checkbox]:checked {
+  position: relative;
+  background-color: rgb(248, 12, 24); /* Checked background color */
+  border-color: rgb(248, 12, 24); /* Checked border color */
 }
-@media (max-width: 1200px) {
+.custom_checkbox input[type=checkbox]:checked::after {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  right: -1px;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  width: 15px;
+  height: 11px;
+  background: url(../images/icons/check_icon.svg) no-repeat;
+}
+
+.pagination .page_item {
+  width: 27.298px;
+  height: 34.811px;
+  border: 1px solid #cfcfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in 0.2s;
+}
+.pagination .page_item.active {
+  background: #f80c18;
+}
+.pagination .page_item.active .page_link {
+  color: #fff;
+}
+.pagination .page_link {
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+.main_button a {
+  padding: 16px 33px;
+  gap: 13px;
+  border: 1px solid #f80c18;
+}
+.main_button a span {
+  color: #f80c18;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px; /* 112.5% */
+}
+
+.header {
+  margin-bottom: 20px;
+  padding: 20px 0;
+  background: #000;
+}
+.header .header_menus {
+  gap: 33px;
+}
+.header .header_menus li a {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 112.5% */
+  transition: all ease-in 0.2s;
+}
+.header .header_menus li a:hover, .header .header_menus li a.active {
+  color: #f80c18;
+  text-shadow: 0px 4px 4px rgba(248, 12, 24, 0.2);
+}
+.header .search_form input {
+  height: 33px;
+  background: #f2f2f2;
+  padding-left: 10px;
+  color: #848484;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  outline: none;
+  line-height: 18px; /* 128.571% */
+  min-width: 230px;
+}
+.header .search_form input::-moz-placeholder {
+  color: #848484;
+  font-size: 14px;
+}
+.header .search_form input::placeholder {
+  color: #848484;
+  font-size: 14px;
+}
+
+.hero {
+  margin-bottom: 40px;
+}
+.hero .hero_block {
+  margin-bottom: 20px;
+}
+.hero .hero_left_btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 12;
+  width: 40px;
+  height: 40px;
+  background: #000;
+}
+.hero .hero_right_btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 12;
+  width: 40px;
+  height: 40px;
+  background: #000;
+}
+.hero .hero_swiper_pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 12;
+}
+.hero .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  opacity: 1;
+  border-radius: unset;
+  background: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.hero .swiper-pagination-bullet-active {
+  background: #f80c18;
+}
+.hero .red_block {
+  height: 120px;
+  width: 100%;
+  background: #f80c18;
+}
+
+.sport_types {
+  margin-bottom: 80px;
+}
+.sport_types .sports_block {
+  gap: 20px;
+}
+.sport_types .sports_item {
+  gap: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.sport_types .sport_date {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px; /* 90% */
+  margin-bottom: 15px;
+}
+.sport_types .sport_name {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 90% */
+  margin-bottom: 55px;
+}
+.sport_types .location_name {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 18px; /* 90% */
+}
+.sport_types .sport_right {
+  padding: 20px 20px 20px 0px;
+}
+.sport_types .grey_block {
+  height: 120px;
+  width: 100%;
+  background: #d9d9d9;
+}
+.sport_types .filter_title {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px; /* 90% */
+  margin-bottom: 6px;
+}
+.sport_types .filter_block {
+  padding: 20px;
+  gap: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.sport_types .sport_types_wrapper {
+  margin-bottom: 20px;
+}
+.sport_types .filter_item {
+  gap: 9px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.sport_types .filter_item span {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer {
+  padding: 60px 0;
+  background-color: rgb(0, 0, 0);
+}
+footer .footer_navs {
+  gap: 125px;
+}
+footer .footer_navs li {
+  gap: 9px;
+}
+footer .footer_navs li a {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 112.5% */
+  transition: all ease-in 0.2s;
+}
+footer .footer_navs li a:hover, footer .footer_navs li a.active {
+  color: #f80c18;
+  text-shadow: 0px 4px 4px rgba(248, 12, 24, 0.2);
+}
+footer .footer_socials {
+  gap: 12px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (max-width: 1240px) {
   .container {
     max-width: 960px;
   }

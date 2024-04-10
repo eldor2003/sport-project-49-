@@ -1,0 +1,194 @@
+// header
+.header {
+	margin-bottom: 20px;
+	padding: 20px 0;
+	background: #000;
+	.header_menus {
+		gap: 33px;
+		li a {
+			color: #fff;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 18px; /* 112.5% */
+			transition: all ease-in 0.2s;
+			&:hover,
+			&.active {
+				color: #f80c18;
+				text-shadow: 0px 4px 4px rgba(248, 12, 24, 0.2);
+			}
+		}
+	}
+	.search_form {
+		input {
+			height: 33px;
+			background: #f2f2f2;
+			padding-left: 10px;
+			color: #848484;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 700;
+			outline: none;
+			line-height: 18px; /* 128.571% */
+			min-width: 230px;
+			&::placeholder {
+				color: #848484;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+// hero
+.hero {
+	margin-bottom: 40px;
+	.hero_block {
+		margin-bottom: 20px;
+	}
+	.hero_left_btn {
+		user-select: none;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		z-index: 12;
+		width: 40px;
+		height: 40px;
+		background: #000;
+	}
+	.hero_right_btn {
+		user-select: none;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		z-index: 12;
+		width: 40px;
+		height: 40px;
+		background: #000;
+	}
+	.hero_swiper_pagination {
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		margin: 0 auto;
+		z-index: 12;
+	}
+	.swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+		border: 1px solid #fff;
+		opacity: 1;
+		border-radius: unset;
+		background: transparent;
+		cursor: pointer;
+		user-select: none;
+	}
+	.swiper-pagination-bullet-active {
+		background: #f80c18;
+	}
+	.red_block {
+		height: 120px;
+		width: 100%;
+		background: #f80c18;
+	}
+}
+
+// sport_types
+.sport_types {
+	margin-bottom: 80px;
+	.sports_block {
+		gap: 20px;
+	}
+	.sports_item {
+		gap: 20px;
+		background: #fff;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	}
+	.sport_date {
+		color: #000;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 18px; /* 90% */
+		margin-bottom: 15px;
+	}
+	.sport_name {
+		color: #000;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 18px; /* 90% */
+		margin-bottom: 55px;
+	}
+	.location_name {
+		color: #000;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 18px; /* 90% */
+	}
+
+	.sport_right {
+		padding: 20px 20px 20px 0px;
+	}
+	.grey_block {
+		height: 120px;
+		width: 100%;
+		background: #d9d9d9;
+	}
+	.filter_title {
+		color: #000;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 18px; /* 90% */
+		margin-bottom: 6px;
+	}
+	.filter_block {
+		padding: 20px;
+		gap: 10px;
+		background: #fff;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	}
+	.sport_types_wrapper {
+		margin-bottom: 20px;
+	}
+	.filter_item {
+		gap: 9px;
+		cursor: pointer;
+		user-select: none;
+		span {
+			color: #000;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
+}
+
+// footer
+footer {
+	padding: 60px 0;
+	background-color: rgba(0, 0, 0, 1);
+	.footer_navs {
+		gap: 125px;
+		li {
+			gap: 9px;
+			a {
+				color: #fff;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 18px; /* 112.5% */
+				transition: all ease-in 0.2s;
+				&:hover,
+				&.active {
+					color: #f80c18;
+					text-shadow: 0px 4px 4px rgba(248, 12, 24, 0.2);
+				}
+			}
+		}
+	}
+	.footer_socials {
+		gap: 12px;
+	}
+}

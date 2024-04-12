@@ -32,16 +32,11 @@
                             <img src="./assets/images/logo.png" alt="">
                         </a>
                     </div>
-                    <!-- hamburger_mobile -->
-                    <!-- <div class="hamurger_menu d-lg-none">
-                        <a href="#">
-                            <img src="./images/hamburger_menu.png" alt="">
-                        </a>
-                    </div> -->
+                    <div class="gray_bg"></div>
                     <ul class="header_menus list-unstyled d-flex align-items-center">
-                        <!-- <span class="close d-lg-none">
+                        <span class="close d-lg-none">
                             <i class="fs-3 fa-solid fa-xmark"></i>
-                        </span> -->
+                        </span>
                         <li><a href="#" class="active">Главная</a></li>
                         <li><a href="#">Блог</a></li>
                         <li><a href="#">Партнёрство</a></li>
@@ -65,6 +60,12 @@
                     </ul>
                     <div class="search_form">
                         <input type="text" placeholder="Поиск...">
+                    </div>
+                    <!-- hamburger_mobile -->
+                    <div class="hamburger_menu d-lg-none">
+                        <a href="#">
+                            <img src="./assets/images/icons/hamburger_menu.svg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -119,6 +120,35 @@
         <section class="sport_types">
             <div class="container">
                 <div class="row sport_types_wrapper">
+                    <div class="d-lg-none col-12">
+                        <h3 class="type_title">
+                            Вид спорта
+                        </h3>
+                        <div class="select_wrapper d-flex align-items-center ">
+                            <div class="custom-select w-100">
+                                <div class="select-selected">Все</div>
+                                <div class="select-items">
+                                    <div>Все</div>
+                                    <div>Бег</div>
+                                    <div>Велогонка</div>
+                                    <div>Плавание</div>
+                                    <div>Акватлон</div>
+                                    <div>Дуатлон</div>
+                                    <div>Триатлон</div>
+                                    <div>Трейлраннинг</div>
+                                    <div>Ходьба</div>
+                                    <div>Другое</div>
+                                    <div>Тренировка</div>
+                                    <!-- Add more options as needed -->
+                                </div>
+                                <input type="hidden" id="selected-value">
+                            </div>
+                            <div class="types_button d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/icons/dropdown_icon.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
                     <div class="col-lg-9">
                         <div class="sports_block d-flex flex-column">
                             <div class="sports_item d-flex align-items-center">
@@ -126,10 +156,18 @@
                                     <img src="./assets/images/sport_item_img.png" alt="">
                                 </div>
                                 <div class="sport_right flex-grow-1">
-                                    <p class="sport_date">7.04.2024</p>
+                                    <div class="sport_top_wrapper">
+                                        <p class="sport_date">7.04.2024</p>
+                                        <div class="sport_location d-md-none d-flex align-items-center gap-2">
+                                            <div class="location_img">
+                                                <img src="./assets/images/icons/location_icon.svg" alt="">
+                                            </div>
+                                            <p class="location_name">г. Москва</p>
+                                        </div>
+                                    </div>
                                     <p class="sport_name">ФЕСТИВАЛЬ МАРАФОНОВ</p>
                                     <div class="sport_bottom d-flex align-items-center justify-content-between">
-                                        <div class="sport_location d-flex align-items-center gap-2">
+                                        <div class="sport_location d-none d-md-flex align-items-center gap-2">
                                             <div class="location_img">
                                                 <img src="./assets/images/icons/location_icon.svg" alt="">
                                             </div>
@@ -149,10 +187,18 @@
                                     <img src="./assets/images/sport_item_img.png" alt="">
                                 </div>
                                 <div class="sport_right flex-grow-1">
-                                    <p class="sport_date">7.04.2024</p>
+                                    <div class="sport_top_wrapper">
+                                        <p class="sport_date">7.04.2024</p>
+                                        <div class="sport_location d-md-none d-flex align-items-center gap-2">
+                                            <div class="location_img">
+                                                <img src="./assets/images/icons/location_icon.svg" alt="">
+                                            </div>
+                                            <p class="location_name">г. Москва</p>
+                                        </div>
+                                    </div>
                                     <p class="sport_name">ФЕСТИВАЛЬ МАРАФОНОВ</p>
                                     <div class="sport_bottom d-flex align-items-center justify-content-between">
-                                        <div class="sport_location d-flex align-items-center gap-2">
+                                        <div class="sport_location d-none d-md-flex  align-items-center gap-2">
                                             <div class="location_img">
                                                 <img src="./assets/images/icons/location_icon.svg" alt="">
                                             </div>
@@ -172,10 +218,18 @@
                                     <img src="./assets/images/sport_item_img.png" alt="">
                                 </div>
                                 <div class="sport_right flex-grow-1">
-                                    <p class="sport_date">7.04.2024</p>
+                                    <div class="sport_top_wrapper">
+                                        <p class="sport_date">7.04.2024</p>
+                                        <div class="sport_location d-md-none d-flex align-items-center gap-2">
+                                            <div class="location_img">
+                                                <img src="./assets/images/icons/location_icon.svg" alt="">
+                                            </div>
+                                            <p class="location_name">г. Москва</p>
+                                        </div>
+                                    </div>
                                     <p class="sport_name">ФЕСТИВАЛЬ МАРАФОНОВ</p>
                                     <div class="sport_bottom d-flex align-items-center justify-content-between">
-                                        <div class="sport_location d-flex align-items-center gap-2">
+                                        <div class="sport_location d-none d-md-flex align-items-center gap-2">
                                             <div class="location_img">
                                                 <img src="./assets/images/icons/location_icon.svg" alt="">
                                             </div>
@@ -196,10 +250,18 @@
                                     <img src="./assets/images/sport_item_img.png" alt="">
                                 </div>
                                 <div class="sport_right flex-grow-1">
-                                    <p class="sport_date">7.04.2024</p>
+                                    <div class="sport_top_wrapper">
+                                        <p class="sport_date">7.04.2024</p>
+                                        <div class="sport_location d-md-none d-flex align-items-center gap-2">
+                                            <div class="location_img">
+                                                <img src="./assets/images/icons/location_icon.svg" alt="">
+                                            </div>
+                                            <p class="location_name">г. Москва</p>
+                                        </div>
+                                    </div>
                                     <p class="sport_name">ФЕСТИВАЛЬ МАРАФОНОВ</p>
                                     <div class="sport_bottom d-flex align-items-center justify-content-between">
-                                        <div class="sport_location d-flex align-items-center gap-2">
+                                        <div class="sport_location d-none d-md-flex  align-items-center gap-2">
                                             <div class="location_img">
                                                 <img src="./assets/images/icons/location_icon.svg" alt="">
                                             </div>
@@ -219,10 +281,18 @@
                                     <img src="./assets/images/sport_item_img.png" alt="">
                                 </div>
                                 <div class="sport_right flex-grow-1">
-                                    <p class="sport_date">7.04.2024</p>
+                                    <div class="sport_top_wrapper">
+                                        <p class="sport_date">7.04.2024</p>
+                                        <div class="sport_location d-md-none d-flex align-items-center gap-2">
+                                            <div class="location_img">
+                                                <img src="./assets/images/icons/location_icon.svg" alt="">
+                                            </div>
+                                            <p class="location_name">г. Москва</p>
+                                        </div>
+                                    </div>
                                     <p class="sport_name">ФЕСТИВАЛЬ МАРАФОНОВ</p>
                                     <div class="sport_bottom d-flex align-items-center justify-content-between">
-                                        <div class="sport_location d-flex align-items-center gap-2">
+                                        <div class="sport_location d-none d-md-flex align-items-center gap-2">
                                             <div class="location_img">
                                                 <img src="./assets/images/icons/location_icon.svg" alt="">
                                             </div>
@@ -239,7 +309,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 d-none d-lg-block">
                         <div class="filter_block d-flex flex-column">
                             <h3 class="filter_title">Вид спорта</h3>
                             <label class="filter_item d-flex align-items-center custom_checkbox">

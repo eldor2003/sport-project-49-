@@ -1,13 +1,17 @@
 $(document).ready(function () {
 	// hamburger
-	$(".hamurger_menu").on("click", function (e) {
+	$(".hamburger_menu").on("click", function (e) {
 		e.preventDefault();
 		$(".header_menus").addClass("active");
+		$(".gray_bg").addClass("active");
+		$("body").addClass("active");
 	});
 
 	$(".close").on("click", function (e) {
 		e.preventDefault();
 		$(".header_menus").removeClass("active");
+		$(".gray_bg").removeClass("active");
+		$("body").removeClass("active");
 	});
 
 	// header navs
@@ -57,4 +61,19 @@ $(document).ready(function () {
 			// },
 		});
 	}
+
+	// custom select mobile
+	$(".select-items").hide();
+
+	$(".select-selected , .types_button").click(function (event) {
+		event.stopPropagation();
+		$(".select-items").toggle();
+	});
+
+	$(".select-items div").click(function () {
+		var selectedText = $(this).text();
+		$(".select-selected").text(selectedText);
+		$("#selected-value").val(selectedText);
+		$(".select-items").hide();
+	});
 });

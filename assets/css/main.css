@@ -456,6 +456,9 @@ body {
   line-height: 18px; /* 90% */
   margin-bottom: 15px;
 }
+.sport_types .sport_img {
+  margin-bottom: -2px;
+}
 .sport_types .sport_name {
   color: #000;
   font-size: 20px;
@@ -903,6 +906,9 @@ footer .footer_socials {
   }
   .carts .promo_block {
     padding: 20px 10px;
+  }
+  .sport_types .sport_img {
+    margin-bottom: 0px;
   }
   .carts .promo_title {
     font-size: 16px;

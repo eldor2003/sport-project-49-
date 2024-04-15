@@ -115,7 +115,10 @@
 		margin-bottom: 15px;
 	}
 	.sport_img {
-		margin-bottom: -2px;
+		overflow: hidden;
+		img {
+			margin-bottom: -3px;
+		}
 	}
 	.sport_name {
 		color: #000;

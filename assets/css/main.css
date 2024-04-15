@@ -457,7 +457,10 @@ body {
   margin-bottom: 15px;
 }
 .sport_types .sport_img {
-  margin-bottom: -2px;
+  overflow: hidden;
+}
+.sport_types .sport_img img {
+  margin-bottom: -3px;
 }
 .sport_types .sport_name {
   color: #000;
@@ -907,7 +910,7 @@ footer .footer_socials {
   .carts .promo_block {
     padding: 20px 10px;
   }
-  .sport_types .sport_img {
+  .sport_types .sport_img img {
     margin-bottom: 0px;
   }
   .carts .promo_title {

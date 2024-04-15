@@ -1,0 +1,74 @@
+// carts
+.carts {
+	margin-bottom: 80px;
+	.promo_block {
+		padding: 28px 40px;
+		background: #fff;
+		gap: 10px;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	}
+	.payment_block {
+		padding: 30px 40px;
+		background: #fff;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	}
+	.promo_title {
+		color: #000;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 18px; /* 90% */
+		margin-bottom: 20px;
+		margin-bottom: 12px;
+	}
+	.select_item label {
+		gap: 10px;
+		color: #000;
+		font-size: 16px;
+		user-select: none;
+		cursor: pointer;
+		font-weight: 400;
+		line-height: 18px; /* 112.5% */
+	}
+	.register_button {
+		margin-top: 12px;
+	}
+	.promocode {
+		gap: 6px;
+	}
+	.promo_code {
+		padding: 8px;
+		width: 192px;
+		height: 50px;
+		border: 1px solid rgba(248, 12, 24, 1);
+		outline: none;
+		margin-bottom: 30px;
+	}
+	.order_title {
+		color: #f80c18;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 18px; /* 112.5% */
+		margin-bottom: 13px;
+	}
+	.order_event {
+		color: #000;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 18px; /* 90% */
+		margin-bottom: 30px;
+	}
+	.order_item {
+		display: block;
+		color: #000;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 18px; /* 112.5% */
+		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

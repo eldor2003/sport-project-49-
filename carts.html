@@ -100,18 +100,62 @@
 
         <section class="carts">
             <div class="container">
-                <div class="row">
+                <div class="row carts_block align-items-start">
                     <div class="col-lg-6">
                         <p class="section_name">Register</p>
-                        <div class="promo_block">
+                        <div class="promo_block d-flex flex-column">
                             <p class="promo_title">Длительный забег</p>
-                            <label>
-                                ПРОМОКОД
-                                <input type="text">
-                            </label>
+                            <div class="select_item">
+                                <label class="d-flex flex-column promocode">
+                                    ПРОМОКОД
+                                    <input type="text" class="promo_code">
+                                </label>
+                            </div>
+                            <div class="select_item">
+                                <label class="filter_item d-flex align-items-center custom_checkbox">
+                                    <input type="checkbox" checked>
+                                    <span>Футболка +100 мдл</span>
+                                </label>
+                            </div>
+                            <div class="select_item">
+                                <label class="filter_item d-flex align-items-center custom_checkbox">
+                                    <input type="checkbox">
+                                    <span>Медаль + 50 мдл</span>
+                                </label>
+                            </div>
+                            <div class="select_item">
+                                <label class="filter_item d-flex align-items-center custom_checkbox">
+                                    <input type="checkbox">
+                                    <span>Гравировка времени на медале +50</span>
+                                </label>
+                            </div>
+
+                            <div class="main_button register_button">
+                                <a href="#" class="d-inline-flex align-items-center">
+                                    <span>Применить</span>
+                                    <img src="./assets/images/icons/sport_item_arrow.svg" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6">
+                        <p class="section_name">Order payment</p>
+                        <div class="payment_block">
+                            <p class="order_title"><span>Ordered sum:</span> 100</p>
+                            <p class="order_event"><span>Event:</span> Длительный забег</p>
+                            <p class="order_item"><span>Discipline:</span> 5 Километров</p>
+                            <p class="order_item"><span>Price:</span> 100.00</p>
+                            <p class="order_item"><span>Full Name:</span> name</p>
+                            <a href="tel:+375544333342" class="order_item"><span>Phone:</span> +375544333342</a>
+                            <a href="mailto:name@mail.ru" class="order_item"><span>Email:</span> name@mail.ru</a>
+                            <div class="main_button text-end">
+                                <a href="#" class="d-inline-flex align-items-center">
+                                    <span>Регистрация</span>
+                                    <img src="./assets/images/icons/sport_item_arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

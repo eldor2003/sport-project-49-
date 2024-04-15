@@ -603,6 +603,82 @@ footer .footer_socials {
   margin-bottom: 40px;
 }
 
+.carts {
+  margin-bottom: 80px;
+}
+.carts .promo_block {
+  padding: 28px 40px;
+  background: #fff;
+  gap: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.carts .payment_block {
+  padding: 30px 40px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.carts .promo_title {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 90% */
+  margin-bottom: 20px;
+  margin-bottom: 12px;
+}
+.carts .select_item label {
+  gap: 10px;
+  color: #000;
+  font-size: 16px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 18px; /* 112.5% */
+}
+.carts .register_button {
+  margin-top: 12px;
+}
+.carts .promocode {
+  gap: 6px;
+}
+.carts .promo_code {
+  padding: 8px;
+  width: 192px;
+  height: 50px;
+  border: 1px solid rgb(248, 12, 24);
+  outline: none;
+  margin-bottom: 30px;
+}
+.carts .order_title {
+  color: #f80c18;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px; /* 112.5% */
+  margin-bottom: 13px;
+}
+.carts .order_event {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 90% */
+  margin-bottom: 30px;
+}
+.carts .order_item {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 112.5% */
+  margin-bottom: 20px;
+}
+.carts .order_item:last-child {
+  margin-bottom: 0;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -632,6 +708,9 @@ footer .footer_socials {
     -webkit-user-select: none;
        -moz-user-select: none;
             user-select: none;
+  }
+  .carts_block {
+    gap: 20px;
   }
   .description {
     margin-bottom: 50px;
@@ -691,6 +770,9 @@ footer .footer_socials {
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
+  }
+  .carts {
+    margin-bottom: 50px;
   }
   .hero_swiper .swiper-slide img {
     height: 150px;
@@ -770,6 +852,9 @@ footer .footer_socials {
     max-width: 100%;
     padding: 0 15px;
   }
+  .carts {
+    margin-bottom: 40px;
+  }
   body {
     background: #f3f3f3;
   }
@@ -815,6 +900,27 @@ footer .footer_socials {
 @media (max-width: 481px) {
   .header_block {
     gap: 15px;
+  }
+  .carts .promo_block {
+    padding: 20px 10px;
+  }
+  .carts .promo_title {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+  .carts .order_event {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .carts .payment_block {
+    padding: 20px 10px;
+  }
+  .carts .select_item label {
+    font-size: 16px;
+    line-height: 18px; /* 112.5% */
+    gap: 6px;
+    padding-right: 10px;
   }
   .header .search_form input {
     max-width: 165px;
@@ -932,6 +1038,7 @@ footer .footer_socials {
     justify-content: center;
     display: flex;
     width: 100%;
+    gap: 20px;
   }
   .sport_types .sports_item {
     width: 100%;

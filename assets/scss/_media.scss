@@ -26,6 +26,9 @@
 		color: #fff;
 		user-select: none;
 	}
+	.carts_block {
+		gap: 20px;
+	}
 	.description {
 		margin-bottom: 50px;
 	}
@@ -87,6 +90,9 @@
 	.container {
 		max-width: 540px;
 	}
+	.carts {
+		margin-bottom: 50px;
+	}
 	.hero_swiper .swiper-slide img {
 		height: 150px;
 		width: 100%;
@@ -100,6 +106,7 @@
 	.details .detail_item {
 		line-height: 22px;
 	}
+
 	.diciplines .diciplines_block {
 		gap: 20px;
 	}
@@ -166,6 +173,9 @@
 		max-width: 100%;
 		padding: 0 15px;
 	}
+	.carts {
+		margin-bottom: 40px;
+	}
 	body {
 		background: #f3f3f3;
 	}
@@ -208,6 +218,27 @@
 @media (max-width: 481px) {
 	.header_block {
 		gap: 15px;
+	}
+	.carts .promo_block {
+		padding: 20px 10px;
+	}
+	.carts .promo_title {
+		font-size: 16px;
+		line-height: 18px;
+		margin-bottom: 8px;
+	}
+	.carts .order_event {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.carts .payment_block {
+		padding: 20px 10px;
+	}
+	.carts .select_item label {
+		font-size: 16px;
+		line-height: 18px; /* 112.5% */
+		gap: 6px;
+		padding-right: 10px;
 	}
 	.header .search_form input {
 		max-width: 165px;
@@ -323,6 +354,7 @@
 		justify-content: center;
 		display: flex;
 		width: 100%;
+		gap: 20px;
 	}
 	.sport_types .sports_item {
 		width: 100%;

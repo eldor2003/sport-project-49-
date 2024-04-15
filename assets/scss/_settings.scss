@@ -310,6 +310,15 @@ body {
 	background: #f80c18;
 	width: 38px;
 	user-select: none;
-	height: 38px;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+// section_name
+.section_name {
+	color: #000;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 18px; /* 90% */
+	margin-bottom: 15px;
 }

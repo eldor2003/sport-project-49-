@@ -323,8 +323,16 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  height: 38px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.section_name {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 90% */
+  margin-bottom: 15px;
 }
 
 .header {
@@ -525,6 +533,76 @@ footer .footer_socials {
   gap: 12px;
 }
 
+.details {
+  margin-bottom: 55px;
+}
+.details .details_block {
+  background: #fff;
+  padding: 20px;
+  gap: 18px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.details .detail_item {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.details .detail_item span {
+  font-weight: 700;
+}
+.details .detail_item.red {
+  color: #f80c18;
+}
+.details .detail_btn {
+  margin-top: 12px;
+}
+
+.diciplines {
+  margin-bottom: 40px;
+}
+.diciplines .diciplines_block {
+  padding: 20px 40px 20px 20px;
+  background: #fff;
+  gap: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.diciplines .kilometres {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 90% */
+}
+.diciplines .dicipline_price {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 75% */
+}
+.diciplines .dicipline_right {
+  gap: 75px;
+}
+
+.description {
+  margin-bottom: 80px;
+}
+.description .desc_block {
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+.description .desc {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 90% */
+  margin-bottom: 40px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -554,6 +632,9 @@ footer .footer_socials {
     -webkit-user-select: none;
        -moz-user-select: none;
             user-select: none;
+  }
+  .description {
+    margin-bottom: 50px;
   }
   .footer_block {
     flex-wrap: wrap;
@@ -617,6 +698,21 @@ footer .footer_socials {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .description .desc {
+    font-size: 17px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .details .detail_item {
+    line-height: 22px;
+  }
+  .diciplines .diciplines_block {
+    gap: 20px;
+  }
+  .dicipline_item {
+    flex-direction: column;
+    gap: 30px;
+  }
   .sport_types {
     margin-bottom: 40px;
   }
@@ -674,11 +770,32 @@ footer .footer_socials {
     max-width: 100%;
     padding: 0 15px;
   }
+  body {
+    background: #f3f3f3;
+  }
   footer .footer_navs {
     gap: 35px;
   }
+  .description .desc_block {
+    padding: 16px 10px;
+  }
   .header {
     margin-bottom: 15px;
+  }
+  .description .desc {
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 18px; /* 150% */
+  }
+  .description {
+    margin-bottom: 40px;
+  }
+  .map img {
+    min-height: 180px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
   .hero .red_block {
     height: 55px;
@@ -704,11 +821,61 @@ footer .footer_socials {
     height: 33px;
     font-size: 12px;
   }
+  .diciplines .diciplines_block {
+    padding: 0;
+    box-shadow: none;
+    background: none;
+    gap: 10px;
+  }
+  .diciplines .dicipline_right {
+    flex-direction: column;
+    gap: 17px;
+    width: 100%;
+  }
+  .section_name {
+    font-size: 16px;
+  }
+  .dicipline_item {
+    gap: 17px;
+  }
+  .diciplines .dicipline_price {
+    font-size: 20px;
+    line-height: 18px; /* 90% */
+  }
+  .diciplines .kilometres {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .dicipline_item {
+    padding: 20px 10px 20px 10px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .hero_img img {
+    height: 140px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .details .details_block {
+    padding: 20px 10px 10px 10px;
+  }
   footer .footer_navs {
     gap: 10px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+  }
+  .details .detail_item {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .details {
+    margin-bottom: 40px;
+  }
+  .details .detail_btn {
+    margin-top: 2px;
   }
   .footer_block {
     flex-direction: column;
@@ -775,5 +942,8 @@ footer .footer_socials {
   }
   .hamburger_menu a {
     display: flex;
+  }
+  .dropdown-menu {
+    min-width: 120px;
   }
 }

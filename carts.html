@@ -51,9 +51,7 @@
                                     Профиль
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Профиль 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Профиль 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Профиль 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Sign in / Sign up</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -150,7 +148,7 @@
                             <a href="mailto:name@mail.ru" class="order_item"><span>Email:</span> name@mail.ru</a>
                             <div class="main_button text-end">
                                 <a href="#" class="d-inline-flex align-items-center">
-                                    <span>Применить</span>
+                                    <span>оплатить</span>
                                     <img src="./assets/images/icons/sport_item_arrow.svg" alt="">
                                 </a>
                             </div>
@@ -223,20 +221,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- JS -->
     <script src="./assets/js/scripts.js"></script>
-    <script>
-        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
-        checkboxes.forEach((checkbox) => {
-            checkbox.addEventListener("change", () => {
-                // Uncheck all other checkboxes when one is checked
-                checkboxes.forEach((otherCheckbox) => {
-                    if (otherCheckbox !== checkbox) {
-                        otherCheckbox.checked = false;
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>
